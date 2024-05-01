@@ -1,0 +1,32 @@
+<!-- <article>
+    <img class="listing-photo" [src]="detailsItem?.avatar"
+      alt="Exterior photo of {{detailsItem?.avatar}}"/>
+    <div>
+        <h2>First_name = > {{detailsItem.first_name}}</h2>
+        <h2>Last_name = > {{detailsItem.last_name}}</h2>
+        <h2>Email = > {{detailsItem.email}}</h2>
+        <h2>Id = > {{detailsItem.id}}</h2>
+
+    </div>
+
+    <button routerLink="/">Back</button>
+  </article> -->
+
+
+  <button mat-flat-button color="accent" routerLink="/">Back To List Users</button>
+ <div style="display: flex; justify-content: center; align-items: center;  width: 100%; height: 90vh;">
+
+  <mat-card class="example-card" style="background-color: azure !important; width: 450px !important">
+  
+    <img mat-card-image [src]="detailsItem?.avatar" alt="Photo">
+    <mat-card-content>
+      <h2>First_name : {{detailsItem.first_name}}</h2>
+      <h2>Last_name : {{detailsItem.last_name}}</h2>
+      <h2>Email : {{detailsItem.email}}</h2>
+      <h2>Id : {{detailsItem.id}}</h2>
+  </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+  
+</div>
